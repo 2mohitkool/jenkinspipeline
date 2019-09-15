@@ -12,8 +12,8 @@ RUN $(npm bin)/ng build
 
 ## Stage-2 : Run nginx to serve the application ##
 
-FROM nginx
+##FROM nginx
 
-COPY --from=builder /angularProjectApp/dist* usr/share/nginx/html/
+##COPY --from=builder /angularProjectApp/dist* usr/share/nginx/html/
 
-EXPOSE 80
+##EXPOSE 80
